@@ -1,5 +1,6 @@
 # Maintainer: Will Price <will.price94+aur@gmail.com>
 pkgname=platformio-git
+pkgver=20140913
 pkgrel=1
 pkgdesc="A cross-platform code builder and library manager"
 arch=('x86_64' 'i686')
@@ -11,7 +12,6 @@ makedepends=()
 checkdepends=()
 optdepends=('energia: For MSP430 based projects'
             'arduino: For Arduino based projects')
-            pkgver=1
 provides=()
 conflicts=()
 replaces=()
@@ -22,8 +22,6 @@ changelog=
 source=('git+https://github.com/ivankravets/platformio.git')
 md5sums=('SKIP')
 noextract=()
-
-
 package() {
   cd "$srcdir/${pkgname%%-git}"
   python2 setup.py install --root="$pkgdir/" --optimize=1
