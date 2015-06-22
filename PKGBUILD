@@ -1,7 +1,7 @@
 # Maintainer: Will Price <will.price94+aur@gmail.com>
 pkgname=platformio-git
 pkgver=20140913
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform code builder and library manager"
 arch=('x86_64' 'i686')
 url="http://platformio.ikravets.com/"
